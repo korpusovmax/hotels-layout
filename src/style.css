@@ -221,15 +221,21 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    align-items: start;
 }
 .hotel-card {
     background: #FAFAFA;
     border-radius: 16px;
+    transition: margin-top 300ms;
+    transition-timing-function: easeOutCubic;
+}
+.hotel-card:hover {
+    margin-top: -12px;
+    box-shadow: 4px 4px 32px #DDD;
 }
 .hotel-card-img {
     height: 320px;
     border-radius: 16px 16px 0px 0px;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -298,4 +304,14 @@ h2 {
 }
 .star-active {
     background-image: url(images/star_active.png);
+}
+
+.bf-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 24px;
+}
+.bf-btn {
+    margin-top: 50px;
 }
