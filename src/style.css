@@ -217,6 +217,7 @@ h2 {
 
 .hotels-section {
     margin-top: 40px;
+    margin-bottom: 147px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -259,13 +260,17 @@ h2 {
     color: #222222;
     margin-top: 8px;
 }
+.hotel-card-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
 .hotel-card-price {
     font-family: 'Jost';
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     color: #222222;
-    margin-top: 24px;
 }
 .hotel-card-rating {
     font-family: 'Jost';
@@ -273,4 +278,24 @@ h2 {
     font-size: 16px;
     line-height: 18px;
     color: #222222;
+    margin-left: 12px;
+}
+.stars-rating {
+    /* width: 200px; */
+    /* height: 50px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    margin-left: 60px;
+}
+.star {
+    background-image: url(images/star.png);
+    background-size: cover;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}
+.star-active {
+    background-image: url(images/star_active.png);
 }
